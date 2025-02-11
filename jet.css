@@ -1,0 +1,97 @@
+
+/* Pour le fond du formulaire */ 
+body {
+    background-image: url("images/jet.jpg");
+    background-size: cover;
+}
+
+form{
+    background-color: rgb(60, 139, 249);
+    padding: 10px;
+   
+    justify-self: end;
+   } 
+
+   form input {
+    background-color: rgb(241, 234, 234);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+   }
+
+   from button{
+    background-color: rgb(73, 45, 229);
+    font-size: 22px;
+    font-family: 'Impact';
+    text-decoration: underline;
+    justify-self: center;
+   }
+
+   form button:hover {
+    letter-spacing: 10px;
+    font-size: 12px;
+    transform: rotate(1deg);
+   }
+
+/* pour le premier plan du formulaire */
+
+h1{
+    color : rgb(0, 0, 0);
+    font-size: 50px;
+    justify-content: center;
+    font-family: cursive;
+    
+}
+
+
+h2{
+    font-size: 50px;
+    font-family: 'Great Vibes', cursive;
+}
+
+
+
+
+
+a.rouge {
+    color: white;
+    padding: 5px;
+    margin: 10px;
+    right: :10px;
+}
+
+a.vert {
+    color: rgb(38, 23, 171);
+}
+
+
+/* button pour le formulaire */
+button {
+    background-color: transparent;
+    color: #010304;
+    border: 2px solid #9a11f6; /* Bordure colorée */
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 25px; /* Coins très arrondis */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffffff; /* Changer la couleur de fond au survol */
+    color: rgb(4, 3, 3); /* Changer la couleur du texte */
+    }
+
+
+//*footer*/
+footer {
+    background-color: #171717;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    justify-content: center;
+}
+
+footer p {
+    margin: 0;
+}

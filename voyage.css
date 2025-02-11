@@ -1,0 +1,280 @@
+/*Pour le menu de nav*/ 
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav li{
+    list-style-type: none;
+    margin: 10px;
+    
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+div.burger{
+    width: 50px;
+    height: 50px;
+    background-image: url(images/close.webp);
+    background-size: cover;
+    
+}
+
+div.open{
+    background-image: url(images/open.webp);
+}
+
+
+
+
+/*Code CSS pour version mobile */
+@media screen and (max-width: 1600px) {
+
+    nav{
+        flex-direction: column;
+    }
+
+    nav li {
+        display: none; /*cacher les liens*/
+    }
+
+    nav.nav-open li{
+        display: block; /*reafficher le menu */
+    }
+
+    div.burger {
+        display: block; /*rendre visible la div*/
+    }
+
+}
+        
+   
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-align: center;
+
+h1, h2, h3 {
+    font-family: 'Great Vibes', cursive;
+    color: gold;
+    justify-content: center;
+}
+
+/* Header and Navigation */
+header {
+    background-color: rgb(226, 124, 182);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid gold;
+}
+
+.logo h1 {
+    font-size: 2.5em;
+    color: gold;
+    margin: 0;
+}
+h1, h2{
+    font-size: 50px;
+    justify-content: center;
+}
+nav {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.burger-lien {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: gold;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: white;
+    background-color: gold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Button pour la partie jet*/
+a#jet{
+border: 2px solid #b701ff; 
+padding: 10px; 
+display: inline-block; 
+text-decoration: none; 
+color: black; 
+border-radius: 5px; 
+transition: all 0.3s ease;
+}
+
+/* Main Content */
+main {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.accueil {
+    background-color: #f4f4f4;
+    padding: 50px;
+    margin-bottom: 20px;
+}
+
+.accueil h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.accueil p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.services {
+    margin: 40px 0;
+}
+
+.services h3 {
+    font-size: 2em;
+    color: gold;
+}
+
+.services p {
+    font-size: 1.1em;
+    color: #444;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+div#fond_rose{
+    background-color: #b701ff;
+    padding: 20px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 20px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+form{
+    background-image: none;
+    padding: 10px;
+    justify-self: center;
+   } 
+
+   form input {
+    background-color: rgb(241, 234, 234);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+   }
+
+   from button{
+    background-color: rgb(48, 16, 227);
+    font-size: 22px;
+    font-family: 'Impact';
+    text-decoration: underline;
+    justify-self: center;
+   }
+
+   form button:hover {
+    letter-spacing: 10px;
+    font-size: 12px;
+    transform: rotate(1deg);
+   }
+
+   form{
+        background-color: rgb(218, 213, 213);
+        padding: 10px;
+        justify-self: center;
+        padding: 5px 10px;
+        border-radius: 25px; /* Coins très arrondis */
+        cursor: pointer;
+        transition: all 0.3s ease;
+       } 
+
+       form input {
+        background-color: rgb(241, 234, 234);
+        border: none;
+        border-radius: 5px;
+        padding: 5px;
+       }
+
+       /* boutton envoyer */
+
+       button {
+        background-color: transparent;
+        color: #010304;
+        border: 2px solid #9a11f6; /* Bordure colorée */
+        padding: 5px 10px;
+        font-size: 16px;
+        border-radius: 25px; /* Coins très arrondis */
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    button:hover {
+        background-color: #a29c9b; /* Changer la couleur de fond au survol */
+        color: white; /* Changer la couleur du texte */
+    }
+
+    /*bannière au dessus */
+   
