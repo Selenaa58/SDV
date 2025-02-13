@@ -1,15 +1,14 @@
 
 /* Pour le fond du formulaire */ 
 body {
-    background-image: url("images/jet.jpg");
-    background-size: cover;
+    background-image: url("images/fond.avif");
 }
 
 form{
-    background-color: rgb(60, 139, 249);
+    background-color: rgb(222, 208, 156);
     padding: 10px;
-   
-    justify-self: end;
+    justify-self: center;
+    position: fixed;
    } 
 
    form input {
@@ -39,8 +38,7 @@ h1{
     color : rgb(0, 0, 0);
     font-size: 50px;
     justify-content: center;
-    font-family: cursive;
-    
+    font-family: Georgia, serif;
 }
 
 
@@ -50,14 +48,18 @@ h2{
 }
 
 
-
+.boite-vol {
+    position: absolute;
+    top: 190px;
+    right: 300px;
+}
 
 
 a.rouge {
     color: white;
     padding: 5px;
     margin: 10px;
-    right: :10px;
+    right: 10px;
 }
 
 a.vert {
@@ -83,15 +85,22 @@ button:hover {
     }
 
 
-//*footer*/
+/*footer
+
 footer {
     background-color: #171717;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 5px;
     justify-content: center;
 }
 
-footer p {
-    margin: 0;
+*/
+
+
+.video {
+    position: absolute;
+    top: 260px;
+    left: 50px;
+    
 }

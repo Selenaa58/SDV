@@ -6,3 +6,7 @@ burger.addEventListener('click', ()=> { // Pour rendre une div cliquable
     burger.classList.toggle('open')
     nav.classList.toggle('nav-open')
 })
+
+
+//pour la bannière //
+

@@ -10,40 +10,39 @@
     <link rel="stylesheet" href="voyage.css">
 </head>
 
-<body>
-    
-
     <header>
         <div class="logo">
-            <h1>Vacances Time ♥ </h1>
+            <h1>Voyage Prestige ♥ </h1>
         </div>
-        <nav id="nav" class="nav-open">
-
+        <nav id="nav">
             <div id="burger" class="burger"></div>
-            <li><a href="#about">A Propos</a></li>
+            <li><a href="#contact">Contactez-nous</a></li>
             <li><a href="#destinations">Nos Destinations</a></li>
             <li><a href="#services">Nos Services</a></li>
-            <li><a href="#contact">Contactez-nous</a></li>
-
+            <li><a href="#about">A Propos</a></li>
+          
+           
+            
         </nav>
-
     </header>
 
-
-
+    <br><br><br>
 
     <section id="image_sous_titres">
-        <div>
-            <section id="images">
-                <img width="400" src="images/tr2.jpg" alt="">
-                <img width="370" src="images/londres2.jpg" alt="">
-                <img width="400" src="images/usa2.jpg" alt="">
-                <img width="400" src="images/fr1.jpg" alt="">
-                <img width="400" src="images/fr2.jpg" alt="">
-
-            </section>
+        <div class="slider">
+            <div class="slides"> 
+                <div class="slide"><img width="455" src="images/tr2.jpg"></div>
+                <div class="slide"><img width="420" src="images/londres2.jpg"></div>
+                <div class="slide"><img width="450" src="images/usa2.jpg"></div>
+                <div class="slide"><img width="450" src="images/fr1.jpg"></div>
+                <div class="slide"><img width="450" src="images/usa3.jpg"></div>
+                <div class="slide"><img width="450" src="images/tr3.jpg"></div>
+                <div class="slide"><img width="450" src="images/pont.jpg"></div>
+            </div>
         </div>
+    
     </section>
+
     <section class="accueil" id="about">
         <h1> Bienvenue ♥ </h1>
         <p>Découvrez nos destinations de rêves et services de location de jets privée pour des moments inoubliables.</p>
@@ -51,24 +50,27 @@
 
     <section class="services" id="services">
         <h2>Nos Services Exquis</h2>
-        <p>Vivez une expérience inoubliable !</p>
+        <p>Vivez une expérience unique !</p>
+       
 
         <a id="jet" href="jet.html">Réservez Nos Jets! </a>
-
-        <section id="images2">
-            <img width="300" src="images/jet1.jpg" alt="">
-            <img width="270" src="images/jet2.jpg" alt="">
-            <img width="420" src="images/jet3.jpg" alt="">
-
-            <br> <br> <br> <br>
-
-            <img width="420" src="images/int1.jpg" alt="">
-            <img width="350" src="images/int2.webp" alt="">
-            <img width="350" src="images/int3.webp" alt="">
-            <img width="350" src="images/int4.jpg" alt="">
-            <img width="340" src="images/int5.jpeg" alt="">
-
-        </section>
+        
+        <br> <br>
+      
+            <div class="slider2">
+                <div class="slides2"> 
+                    
+                    <div class="slide2"><img width="409" src="images/jet4.jpg"></div>
+                    <div class="slide2"><img width="399" src="images/int1.jpg"></div>
+                    <div class="slide2"><img width="330" src="images/int2.webp"></div>
+                    <div class="slide2"><img width="330" src="images/int3.webp"></div>
+                    <div class="slide2"><img width="440" src="images/jet5.jpg"></div>
+                    <div class="slide2"><img width="330" src="images/londres1.jpg"></div>
+                </div>
+            </div>
+      
+    </section>
+      
 
 
         <section class="destinations" id="destinations">
@@ -76,25 +78,47 @@
             <p>Offrez-vous une expérience unique avec nos prestations haut de gamme.</p>
 
             <div id="fond_rose">
-                <img width="320" src="images/usa1.jpg" alt="">
+                <img width="320" src="images/usa1.jpg" alt="usa1">
+                
                 <img width="350" src="images/act1.jpg" alt="">
-                <img width="350" src="images/paris1.jpg" alt="">
-                <img width="350" src="images/tr6.jpg" alt="">
+                <img width="350" src="images/paris1.jpg" alt="paris">
+                <img width="340" src="images/tr6.jpg" alt="turquie6">
             </div>
+           
             
 
+                <button id="bouton2">Réservez vos billets ici !</button>
 
-
-
-
-
+            
         </section>
+       
+        <section id="Avis">
+
+            <div class="les-avis">
+                <h5>Avis de nos clients</h5>
+                <div class="avis">
+                    <p class="nom">GravenilvecYT</p>
+                    <p class="commentaire">"Service d'une qualité irréprochable, jet privé d'exception. Une expérience unique que je recommande vivement!"</p>
+                </div>
+                <div class="avis">
+                    <p class="nom">Thomas Droitiez</p>
+                    <p class="commentaire">"Voyage d’une parfaite organisation, service et confort inégalés. L’expérience du jet privé était sublime."</p>
+                </div>
+                <div class="avis">
+                    <p class="nom">Alex Térieur</p>
+                    <p class="commentaire">"Un service soigné, un confort absolu. Le jet privé a surpassé toutes mes attentes, je recommande vivement cette agence."</p>
+                </div>
+            </div>
+        </section>
+
+      
 
         <section class="contact" id="contact">
             <h2>Contactez-nous</h2>
             <p>Envoyez un message pour vos réclamations et suggestions ♥ </p>
         </section>
 
+<br>
         <form method="post" action="">
             <label for="nom"> Nom </label>
             <input type="text" placeholder=" Last name" name="nom">
@@ -117,17 +141,11 @@
         </form>
 
 
-
-
-
-
-        </main>
-
         <footer>
-            <p>&copy; 2025 Vacances Time - Tous droits réservés</p>
+            <p>&copy; 2025 Voyage Prestige - Tous droits réservés</p>
         </footer>
 
-        <script src="voyage.js"></script>
+        <script src="script.js"></script>
 </body>
 
 </html>

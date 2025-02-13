@@ -12,25 +12,30 @@ nav li{
 
 nav li a {
     text-decoration: none;
+    color: #010304;
+    &:hover {
+        color: antiquewhite;
+    }
 }
 
 div.burger{
     width: 50px;
     height: 50px;
-    background-image: url(images/close.webp);
+    background-image: url(images/open.webp);
     background-size: cover;
+    display: none;
     
 }
 
 div.open{
-    background-image: url(images/open.webp);
+    background-image: url(images/close.webp);
 }
 
 
 
 
 /*Code CSS pour version mobile */
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 600px) {
 
     nav{
         flex-direction: column;
@@ -65,14 +70,26 @@ body {
     padding: 0;
     color: #333;
     text-align: center;
+}
+
+h1{
+    text-align: center;
+}
 
 h1, h2, h3 {
     font-family: 'Great Vibes', cursive;
     color: gold;
     justify-content: center;
+    text-align: center;
 }
 
-/* Header and Navigation */
+h4 {
+    font-family: serif;
+}
+
+
+
+/* Header et Nav */
 header {
     background-color: rgb(226, 124, 182);
     padding: 20px;
@@ -87,6 +104,7 @@ header {
     color: gold;
     margin: 0;
 }
+
 h1, h2{
     font-size: 50px;
     justify-content: center;
@@ -134,7 +152,7 @@ border-radius: 5px;
 transition: all 0.3s ease;
 }
 
-/* Main Content */
+/* centre */
 main {
     padding: 50px 20px;
     text-align: center;
@@ -182,38 +200,6 @@ footer p {
     margin: 0;
 }
 
-div#fond_rose{
-    background-color: #b701ff;
-    padding: 20px;
-}
-
-/* Media Queries */
-@media screen and (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #333;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        padding: 20px;
-    }
-
-    .nav-links li {
-        margin: 10px 0;
-        text-align: center;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-}
-
 form{
     background-image: none;
     padding: 10px;
@@ -227,8 +213,8 @@ form{
     padding: 5px;
    }
 
-   from button{
-    background-color: rgb(48, 16, 227);
+   form button{
+    background-color: rgb(196, 190, 228);
     font-size: 22px;
     font-family: 'Impact';
     text-decoration: underline;
@@ -263,9 +249,9 @@ form{
        button {
         background-color: transparent;
         color: #010304;
-        border: 2px solid #9a11f6; /* Bordure colorée */
+        border: 2px solid #e0c1f5; /* Bordure colorée */
         padding: 5px 10px;
-        font-size: 16px;
+        font-size: 10px;
         border-radius: 25px; /* Coins très arrondis */
         cursor: pointer;
         transition: all 0.3s ease;
@@ -276,5 +262,160 @@ form{
         color: white; /* Changer la couleur du texte */
     }
 
-    /*bannière au dessus */
    
+   
+    /*bannière au dessus; slider TUTO DE GRAVEN ! --> sur Youtube ! */
+
+.slider {
+    overflow: hidden;
+}
+    
+
+div.slides { 
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    animation: glisse 15s infinite ease; 
+   
+}
+
+@keyframes glisse {
+ 
+    0% {  
+        transform: translateX(0);
+    }
+
+    10% {
+        transform: translateX(0);
+    }
+
+    33% {
+        transform: translateX(-500px);
+    }
+
+    66% {
+        transform: translateX(-500px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}  
+
+/*avis clients */
+
+h5{
+    font-size: larger;
+    font-family: Georgia, serif;
+}
+
+les-avis {
+    width: 90%;
+    max-width: 800px;
+    background: white;
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: center;
+}
+
+
+.avis {
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+.nom {
+    font-weight: bold;
+    color: #222;
+    font-size: 1.2em;
+}
+
+.commentaire {
+    font-style: italic;
+    color: #555;
+    margin: 2px;
+}
+
+/* slide destination, TUTO DE GRAVEN ! --> sur Youtube ! */
+
+.slider2 {
+    overflow: hidden;
+}
+    
+
+div.slides2 { 
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    animation: glisse 15s infinite ease; 
+   
+}
+
+@keyframes glisse {
+ 
+    0% {  
+        transform: translateX(0);
+    }
+
+    10% {
+        transform: translateX(0);
+    }
+
+    33% {
+        transform: translateX(-500px);
+    }
+
+    66% {
+        transform: translateX(-500px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}  
+
+
+/*destination */ 
+#fond_rose {
+    
+    padding:10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-bottom:50px;
+    &:hover {
+        transition: all 0.5s ease;
+        background-color: rgb(115, 196, 247);
+    }
+}
+
+
+#fond_rose img {
+    border-radius: 15px;
+    &:hover {
+        -ms-transform: scale(1); /* IE 9 */
+        -webkit-transform: scale(1); /* Safari 3-8 */
+        transform: scale(1.1);
+}
+}
+
+#bouton2 {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px; 
+    cursor: pointer;
+    width: 20%;
+    font-size:medium;
+}
+
+#bouton2:hover {
+background-color: #0056b3;
+}
+
+
